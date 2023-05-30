@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 온리포유 인덱스 </title>
+    <style>
+        @import url('https://webfontworld.github.io/sandbox/SBAggro.css');
+
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0 auto;
+            font-family: 'SBAggro';
+            font-weight: 700;
+            font-size: 40px;
+        }
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        ul,li {
+            list-style: none;
+        }
+
+        .wrap {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+
+        .html, .php, .figma {
+            width: 33.333%;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'SBAggro';
+            font-weight: bold;
+            color: #FFAD7F;
+            position: relative;
+            /* padding: 40px; */
+        }
+
+        .hover {
+            color: #000;
+            margin-bottom: 40px;
+            font-size: 22px;
+        }
+        .hover:hover {
+            color: #FFAD7F;
+        }
+
+        /* 전체 */
+        .AllTopDown{
+            padding: 60px 0;
+        }
+
+        .wrap div:nth-child(3) .F_cont ul{
+            border-right:none;
+        }
+
+        /* 피그마 : 로그인 */
+        .F_cont ul{
+            border-right:0.5px solid #ededed;
+            padding: 0 25px;
+        }
+        
+        .F_cont h2 {
+            font-size: 22px;
+            font-family: 'SBAggro';
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: left;
+            padding: 0 25px;
+            border-left: 2px solid #FFAD7F;
+        }
+        .F_cont ul {
+            text-align: left;
+            font-size: 20px;
+            margin-bottom: 60px;
+        }
+        .F_cont ul:last-child {
+            margin-bottom: 0px;
+        }
+        .F_cont ul li {
+            /* border-bottom: Dashed 1px #ededed; */
+            padding: 15px 0;
+        }
+        .F_cont ul li a {
+            font-weight: normal;
+            font-size: 16px;
+        }
+        .F_cont ul li:hover {
+            background: #EBFFB3;
+            border-radius: 50px;
+            padding: 15px 0px 15px 51px;
+            transition: 0.25s;
+            backdrop-filter: blur(8px);
+        }
+        .F_cont ul li:hover a{
+            color: #35bf13;
+        }
+        .F_cont ul li:not(:hover){
+            transition: 0.25s;
+        }
+
+        /* 이미지 */
+        .sticker{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1000;
+        }
+        .sticker img{
+            position: fixed;
+            opacity: 0.2;
+        }
+        .sticker img:nth-child(1){bottom: 180px; left: 426px; transform: scale(1.9);}
+        .sticker img:nth-child(2){top: 525px; right: 224px; transform: scale(1.3);}
+        .sticker img:nth-child(3){top: 240px; left: 29px; filter: blur(1px);}
+        .sticker img:nth-child(4){top: 46px; right: 130px; transform: scale(1.1);}
+        .sticker img:nth-child(5){bottom: 28px; left: 216px; filter: blur(3px); filter: blur(2px);}
+        .sticker img:nth-child(6){top: -344px; right: 187px; transform: rotate(45deg);}
+
+    </style>
+</head>
+<body class="AllTopDown">
+    <h2 style="text-align: center; font-size:50px; font-family: 'SBAggro'; margin-bottom: 70px;">2조 온리포유 🥗💚</h2>
+    <div class="wrap">
+        <div class="figma">
+            <a href="https://www.figma.com/file/y6coUdQsPECCuQpi5a4rx5/%ED%8C%80%ED%94%8C?node-id=0%3A1&t=bHNhr4exW1EVqtXm-1" target="_blank"><h2 class="hover">Figma</h2></a>
+            <div class="F_cont">
+                <h2>로그인•회원가입</h2>
+                <ul class="F_login">
+                    <li><a href="figma/Figma_login/F_login.html">01. 로그인 팝업창</a></li>
+                    <li><a href="figma/Figma_login/F_ID.html">02. 아이디 찾기</a></li>
+                    <li><a href="figma/Figma_login/F_password.html">03. 비밀번호 찾기</a></li>
+                    <li><a href="figma/Figma_login/F_ID_clear.html">04. 아이디 찾기 완료</a></li>
+                    <li><a href="figma/Figma_login/F_password_clear.html">05. 비밀번호 찾기 완료</a></li>
+                    <li><a href="figma/Figma_login/F_OK.html">05. 이용약관 동의</a></li>
+                    <li><a href="figma/Figma_login/F_OK.html">06. 회원가입 정보 입력</a></li>
+                    <li><a href="figma/Figma_login/F_clear.html">08. 회원가입 완료</a></li>
+                </ul>
+                <h2>요리방 </h2>
+                <ul class="F_board">
+                    <li><a href="Figma/Figma_notion/F_board.html">09. 요리방 메인</a></li>
+                    <li><a href="Figma/Figma_notion/F_boardOK.html">10.요리방 글 쓰기</a></li>
+                    <li><a href="Figma/Figma_notion/F_boardWhiteOk.html">11. 요리방 글쓰기 완료</a></li>
+                    <li><a href="Figma/Figma_notion/F_boardView.html">12. 요리방 게시글 보가</a></li>
+                    <li><a href="Figma/Figma_notion/F_boardNOT.html">14. 요리방 수정</a></li>
+                    <li><a href="Figma/Figma_notion/F_boardDtbye.html">15. 요리방 삭제완료</a></li>
+                </ul>
+                <h2>메인 카테고리</h2>
+                <ul class="F_main">
+                    <li><a href="figma/Figma_main/F_mainEye.html">16.메인 눈</a></li>
+                    <li><a href="figma/Figma_main/F_mainLiver.html">17.메인 간</a></li>
+                    <li><a href="figma/Figma_main/F_mainBorn.html">18.메인 뼈</a></li>
+                    <li><a href="figma/Figma_main/F_mainPregnant.html">19.메인 임산부</a></li>
+                    <li><a href="figma/Figma_main/F_mainStress.html">20.메인 스트레스</a></li>
+                    <li><a href="figma/Figma_main/F_mainSkin.html">21.메인 피부</a></li>
+                    <li><a href="figma/Figma_main/F_mainBlood.html">22.메인 혈액순환</a.</li>
+                    <li><a href="figma/Figma_main/F_mainDigestive.html">23.메인 소화기능</a></li>
+                    <li><a href="figma/Figma_main/F_mainBreathing.html">24.메인 호흡기능</a></li>
+                    <li><a href="figma/Figma_main/F_mainWomen.html">25.메인 갱년기</a></li>
+                </ul>
+                <h2>메인 카테고리 자세히보기</h2>
+                <ul class="F_main">
+                    <li><a href="figma/Figma_mainFood/F_mainFish.html">16.메인 생선</a></li>
+                    <li><a href="figma/Figma_mainFood/F_mainCarrot.html">17.메인 당근</a></li>
+                    <li><a href="figma/Figma_mainFood/F_mainAmond.html">18.메인 아몬드</a></li>
+                    <li><a href="figma/Figma_mainFood/F_mainBlueberry.html">19.메인 블루베리</a></li>
+                    <li><a href="figma/Figma_mainFood/F_mainkale.html">20.메인 케일</a></li>
+                    <li><a href="figma/Figma_mainFood/F_mainAnchovy.html">21.메인 멸치</a></li>
+                    <li><a href="figma/Figma_mainFood/F_mainCheese.html">22.메인 치즈</a.</li>
+                    <li><a href="figma/Figma_mainFood/F_mainSeaweed.html">23.메인 미역</a></li>
+                    <li><a href="figma/Figma_mainFood/F_mainBroccoli.html">24.메인 브로콜리</a></li>
+                    <li><a href="figma/Figma_mainFood/F_mainBean.html">25.메인 콩</a></li>
+                    <li><a href="figma/Figma_mainFood/F_mainMugwort.html">25.메인 쑥</a></li>
+                    <li><a href="figma/Figma_mainFood/F_mainleek.html">25.메인 부추</a></li>
+                    <li><a href="figma/Figma_mainFood/F_mainKyul.html">25.메인 결명자</a></li>
+                    <li><a href="figma/Figma_mainFood/F_mainkudzu.html">25.메인 칡</a></li>
+                </ul>
+                <h2>마이페이지</h2>
+                <ul class="F_mypage">
+                    <li><a href="figma/Figma_mypage/F_mypage.html">26.마이페이지</a></li>
+                    <li><a href="figma/Figma_mypage/F_mypageModify.html">27.마이페이지 수정</a></li>
+                    <li><a href="figma/Figma_mypage/F_mypageModifyOk.html">28.마이페이지 수정완료</a></li>
+                    <li><a href="figma/Figma_mypage/F_mypageWithdraw.html">29.마이페이지 탈퇴</a></li>
+                    <li><a href="figma/Figma_mypage/F_mypageWithdrawOk.html">30.마이페이지 탈퇴완료</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="html">
+            <a href="#"><h2 class="hover">html</h2></a>
+            <div class="F_cont">
+                <h2>로그인•회원가입</h2>
+                <ul class="login">
+                    <li><a href="html/login/login.html">01. 로그인창</a></li>
+                    <li><a href="html/login/loginfind.html">02. 아이디 찾기</a></li>
+                    <li><a href="html/login/passwordfind.html">03. 비밀번호 찾기</a></li>
+                    <li><a href="html/login/loginfindResult.html">04. 아이디 찾기 완료</a></li>
+                    <li><a href="html/login/passwordresult.html">05. 비밀번호 찾기 완료</a></li>
+                    <li><a href="html/join/joinTerms.html">06. 이용약관 동의</a></li>
+                    <li><a href="html/join/join.html">07. 회원가입 정보 입력</a></li>
+                    <li><a href="html/join/joinEnd.html">08. 회원가입 완료</a></li>
+                </ul>
+                <h2>요리방 게시판</h2>
+                <ul class="board">
+                    <li><a href="html/board/board.html">07. 게시판 메인</a></li>
+                    <li><a href="html/board/boardView.html">08.게시판 보기</a></li>
+                    <li><a href="html/board/boardWrite.html">09. 게시판 글쓰기</a></li>
+                    <li><a href="html/board/boardModifyReal.html">10. 게시판 수정</a></li>
+                    <li><a href="html/board/board.html">12. 게시판 검색</a></li>
+                </ul>
+                <h2>메인페이지</h2>
+                <ul class="main">
+                    <li><a href="html/main/main.html">07. 메인페이지</a></li>
+                </ul>
+                <h2>마이페이지</h2>
+                <ul class="mypage">
+                    <li><a href="html/mypage/mypageModify.html">07. 마이페이지</a></li>
+                    <li><a href="html/mypage/mypageModifyOk.html">07. 마이페이지 수정 완료</a></li>
+                    <li><a href="html/mypage/mypageWithdraw.html">07. 마이페이지 탈퇴하기</a></li>
+                    <li><a href="html/mypage/mypageWithdrawOk.html">07. 마이페이지 탈퇴하기완료</a></li>
+                </ul>
+                <h2>카테고리</h2>
+                <ul class="Categorie">
+                    <li><a href="html/Categorie/category.html">07. 카테고리 메인</a></li>
+                    <li><a href="html/Categorie/Categoriemodal.html">07. 카테고리 모달창</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="php">
+            <a href="#"><h2 class="hover">php</h2></a>
+            <div class="F_cont">
+                <h2>메인페이지</h2>
+                <ul class="main">
+                    <li><a href="php/main/main.php">메인페이지</a></li>
+                </ul>
+                <h2>마이페이지</h2>
+                <ul class="mypage">
+                    <li><a href="php/mypage/mypage.php">07. 마이페이지 메인</a></li>
+                    <li><a href="php/mypage/mypageAgeUpload.php">07. 마이페이지 나이 수정</a></li>
+                    <li><a href="php/mypage/mypageImgeUpload.php">07. 마이페이지 이미지 수정</a></li>
+                    <li><a href="php/mypage/mypageNickUpload.php">07. 마이페이지 닉네임 수정</a></li>
+                    <li><a href="php/mypage/mypagePassUpload.php">07. 마이페이지 비밀번호 수정</a></li>
+                    <li><a href="php/mypage/mypagePhoneUpload.php">07. 마이페이지 핸드폰 번호 수정</a></li>
+                    <li><a href="php/mypage/mypageWithdraw.php">07. 마이페이지 탈퇴</a></li>
+                    <li><a href="php/mypage/mypageWithdrawOk.php">07. 마이페이지 탈퇴 완료</a></li>
+                </ul>
+                <h2>로그인•회원가입</h2>
+                <ul class="login">
+                    <li><a href="php/login/login.php">01. 로그인창</a></li>
+                    <li><a href="php/login/loginFind.php">02. 아이디 찾기</a></li>
+                    <li><a href="php/login/loginfindResult.php">03. 아이디 찾기 완료</a></li>
+                    <li><a href="php/login/pwFind.php">04. 비밀번호 재설정</a></li>
+                    <li><a href="php/login/pwfindCheck.php">05. 비밀번호 재설정 정보입력</a></li>
+                    <li><a href="php/login/pwModify.php">06. 비밀번호 재설정</a></li>
+                    <li><a href="php/login/pwfindResult.php">07. 비밀번호 재설정 완료</a></li>
+                    <li><a href="php/join/join.php">08. 회원가입</a></li>
+                    <li><a href="php/join/joinTerms.php">08. 회원가입 체크</a></li>
+                    <li><a href="php/join/joinSave.php">08. 회원가입 완료</a></li>
+                </ul>
+                <h2>요리방 게시판</h2>
+                <ul class="board">
+                    <li><a href="php/board/board.php">07. 게시판 메인</a></li>
+                    <li><a href="php/board/boardModify.php">08.게시판 수정</a></li>
+                    <li><a href="php/board/boardModifySave.php">09. 게시판 수정 완료</a></li>
+                    <li><a href="php/board/boardRemove.php">10. 게시판 삭제</a></li>
+                    <li><a href="php/board/boardView.php">12. 게시판 보기</a></li>
+                    <li><a href="php/board/boardWrite.php">12. 게시판 쓰기</a></li>
+                    <li><a href="php/board//boardWriteSave.php">12. 게시판 쓰기 저장</a></li>
+                </ul>
+                <h2>카테고리</h2>
+                <ul class="Categorie">
+                    <li><a href="php/cate/cate.php">07. 카테고리 메인</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>요리방</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <style>
+        .board_inner {
+            margin-top: 200px;
+        }
+        .board_inner h1 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 40px;
+        }
+        .board_write {
+            margin-top: 70px;
+        }
+        .board_write fieldset div:last-child {
+            display: flex;
+            justify-content: space-between;
+        }
+        .board_write fieldset div:last-child button {
+            background-color: #B2C7B2;
+            border-radius: 30px;
+        }
+        .board_write fieldset input {
+            box-sizing: border-box;
+            background-color: #F5F5F5;
+        }
+        .board_write fieldset textarea {
+            box-sizing: border-box;
+            background-color: #F5F5F5;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <img src="../assets/img/logo.png" alt="로고이미지">
+            <ul>
+                <li><a href="#">카테고리</a></li>
+                <li><a href="#">요리방</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="board_inner">
+                <h1>레시피 수정하기</h1>
+                <div class="board_write">
+                    <form action="#" name="#" method="post">
+                        <fieldset>
+                            <legend class="blind">게시글 작성하기</legend>
+                            <div>
+                                <label for="boardTitle">제목</label>
+                                <input type="text" id="boardTitle" name="boardTitle" class="inputStyle">
+                            </div>
+                            <div>
+                                <label for="boardContents">내용</label>
+                                <textarea name="" id="boardContents" rows="20" class="inputStyle"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="btnStyle3">취소</button>
+                                <button type="submit" class="btnStyle3">업로드</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footlogo">
+                <img src="../../assets/img/footlogo.svg" alt="로고이미지">
+            </div>
+            <div class="footcont">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                </ul>
+                <ul>
+                    <li>ONLYFORYOU</li>
+                    <li>BRN : 00 - 00 - 0000</li>
+                    <li>Representative : people</li>
+                </ul>
+                <ul>
+                    <li>call : 1588-0000</li>
+                    <li>email : only@for.you</li>
+                    <li>Address : ansan </li>
+                </ul>
+                <strong>copyright &copy; 2023 onlyforyou Inc All right reserved</strong>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아몬드 카테고리</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link href="https://webfontworld.github.io/score/SCoreDream.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #modal{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .container{
+            width: 800px;
+            height: 800px;
+            background-color: #F6F6F6;
+            border-radius: 10px;
+
+        }
+        .container .header{
+            display: flex;
+            padding-top: 50px;
+            position: relative;
+        }
+        .container .header .c1 {
+            background-color: #ccc;
+            /* width: 200px;
+            height: 200px; */
+            border-radius: 10px;
+            align-items: center;
+            display: flex;
+            margin-left: 30px;
+            box-sizing: border-box;
+            padding: 30px;
+            
+        }
+        .container .header .c1 img{
+            width: 150px;
+            height: 150px;
+            display: block;
+        }
+        .container .header .c2 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .header .c2 h1{
+            font-size: 50px;
+            font-weight: 300;
+        }
+        .container .header .c3{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .container .header .c3 img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .container .main ul li {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 2;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="modal">
+        <div class="container">
+            <div class="header">
+                <div class="c1">
+                    <img src="../../assets/img/01-01.png" alt="아몬드">
+                </div>
+                <div class="c2">
+                    <h1>아몬드</h1>
+                </div>
+                <div class="c3">
+                    <img src="../../assets/img/x.png" alt="">
+                </div>
+            </div>
+            <div class="main">
+                <ul>
+                    <li>🥜 <span style="color:red"> 다이어트에 도움이 됩니다.</span> 아몬드는 탄수화물 대비 단백질, 지방, 식이섬유 등의 영양소가 균형잡혀 있어 다이어트에 적합한 간식입니다. 또한 아몬드는 식사 전에 먹으면 포만감을 느끼게 하여 과식을 예방할 수 있습니다.</li>
+                    <li>🥜 <span style="color:red">심혈관 건강을 개선합니다.</span> 아몬드는 단백질, 식이섬유, 비타민 E, 마그네슘 등의 영양소가 풍부하여 심혈관 건강에 도움이 됩니다. 또한 아몬드는 혈압을 낮추는데도 효과가 있습니다.</li>
+                    <li>🥜 <span style="color:red">뼈 건강을 강화합니다.</span> 아몬드에는 칼슘, 마그네슘, 인, 칼륨 등의 미네랄이 풍부하게 포함되어 있어 뼈 건강을 강화하는데 도움이 됩니다.</li>
+                    <li>🥜 <span style="color:red">뇌 건강을 지원합니다.</span> 아몬드에는 오메가-3 지방산과 비타민 E 등의 영양소가 포함되어 있어 뇌 건강을 지원하는데 도움이 됩니다. 또한 아몬드는 뇌 기능을 개선하고 기억력을 강화하는 데도 효과가 있습니다.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        const image = document.querySelector('.c3 img');
+        const modal = document.querySelector('#modal');
+
+        image.addEventListener('click', function() {
+        modal.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

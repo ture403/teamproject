@@ -1,0 +1,204 @@
+/* boardWrite */
+.boardW__inner {
+    margin-top: 200px;
+}
+.boardW__inner h1 {
+    margin: 0 0 10px 60px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.boardW__write {
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #F2FFF5;
+}
+.boardW__write fieldset > div > label {
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+.boardW__write form .save__btn {
+    display: flex;
+    justify-content: right;
+}
+.boardW__write form .save__btn button
+,.boardW__write form .save__btn a {
+    margin-left: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 100;
+    background-color: #B2C7B2;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+.boardW__write form .save__btn button:hover
+,.boardW__write form .save__btn a:hover {
+    background-color: #c8ffd6;
+    color: #8a9b8a;
+    cursor: pointer;
+}
+.boardW__write fieldset input {
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.boardW__write fieldset input.boardName {
+    width: 30%;
+}
+.boardW__write fieldset > div > p {
+    font-weight: 100;
+    margin-left: 15px;
+    color: #666666;
+}
+.boardW__write fieldset textarea {
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.contents__plus,
+.contents__minus {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 100;
+    padding: 5px 35px 2px 10px;
+    position: relative;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.contents__plus::before,
+.contents__minus::before {
+    content: '';
+    position: absolute;
+    right: 4px;
+    top: 9px;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/boardwrite02.svg);
+    background-position: center;
+    background-size: cover;
+}
+.contents__minus::before {
+    background-image: url(../img/boardwrite03.svg);
+}
+.contents__btn {
+    display: flex;
+    justify-content: center;
+}
+.contents__plus:hover,
+.contents__minus:hover {
+    background-color: #d1ddd4;
+    border-radius: 20px;
+}
+.contents__addbox > fieldset {
+    border-top: 5px dashed #eee;
+    padding-top: 50px;
+}
+
+/* boardView */
+.boardV__inner {
+    margin-top: 200px;
+    min-height: 1000px;
+}
+.boardV__inner h1 {
+    font-size: 30px;
+    margin: 0 60px;
+    position: relative;
+}
+.boardV__inner h1::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -45px;
+    top: -8px;
+    background-image: url(../assets/img/boardview01.svg);
+}
+.boardV__wrap {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 80px 80px 30px 80px;
+    background-color: #F2FFF5;
+    border-radius: 30px;
+}
+.boardV__wrap h2 {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.boardV__info {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.boardV__info span {
+    font-weight: 100;
+    display: inline-block;
+    color: #666666;
+}
+.boardV__info span:nth-child(2) {
+    margin: 5px 30px;
+    position: relative;
+}
+.boardV__info span:nth-child(2)::before{
+    content: '|';
+    position: absolute;
+    left: -16px;
+}
+.boardV__info span:last-child {
+    position: relative;
+}
+.boardV__info span:last-child::before{
+    content: '|';
+    position: absolute;
+    left: -19px;
+}
+.boardV__wrap h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.boardV__wrap .board__contents {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+.boardV__wrap .board__contents h4 {
+    font-size: 22px;
+}
+.boardV__wrap .board__contents span {
+    font-weight: 100;
+    line-height: 1.5;
+}
+.boardV__wrap .board__contents img {
+    display: block;
+    margin: 0 auto 50px auto;
+    width: 350px;
+    height: 280px;
+    border-radius: 10px;
+}
+/* .swiper-button-prev {
+    background-color: #000;
+} */
+.boardV__inner .board_btn {
+    display: flex;
+    justify-content: right;
+}
+.boardV__inner .board_btn a {
+    margin: 20px 5px;
+    font-weight: 100;
+}
+.modi__img {
+    width: 350px;
+    height: 280px;
+    margin: 0 auto;
+    display: block;
+}
+.modi__pass {
+    width: 100%;
+    display: flex;
+    justify-content:right;
+}
+.modi__pass label {
+    margin: 15px 10px 0 0;
+}

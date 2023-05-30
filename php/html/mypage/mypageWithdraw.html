@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <title>마이페이지 탈퇴</title>
+    <style>
+        /* .mypageWithdraw{
+            margin-top: 100px;
+            min-height: 800px;
+        }
+        .mypageWithdraw .container{
+            padding: 200px 0 300px;
+            text-align: center;
+        }
+        .mypageWithdraw p {
+            font-size: 30px;
+            color: #747474;
+            margin-top: 90px;
+            color: #227E16;
+        } */
+        #main{
+            width: 760px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        #main .container {
+            width: 766px;
+            height: 600px;
+            background-color: #ccc;
+        }
+        .withdraw_inner {}
+        .withdraw_form {
+            margin-top: 200px;
+            width: 730px;
+            height: 380px;
+            text-align: center;
+            
+        }
+        .withdraw_form h1{
+            font-size: 40px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-bottom: 70px;
+        }
+        .withdraw_form button {
+            width: 160px;
+            height: 60px;
+            background-color: #d9d9d9;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 10px;
+            font-family: 'SBAggro';
+            margin-top: 50px;
+        }
+        .withdraw_form button:hover{
+            background-color: rgb(165, 165, 165);
+            color: #fff;
+            
+        }
+        </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <img src="../../assets/img/logo.png" alt="로고이미지">
+            <ul>
+                <li><a href="#">카테고리</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">요리방</a></li>
+                <li><a href="#">로그인</a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="main" class="container ">
+        <div class="withdraw_inner">
+            <div class="withdraw_form">
+                <h1>탈퇴하기</h1>
+                <form action="../../mypage/mypageWithdrawOk.html" name="#" method="post">
+                    <fieldset>
+                        <div>
+                            <label for="youPass" class="blind"></label>
+                            <input type="password" id="youPass" name="youPass" class="inputStyle5"   placeholder="비밀번호를 입력해주세요." required>
+                        </div>
+                        <div>
+                            <label for=""></label>
+                            <input type="text" class="inputStyle5" placeholder="탈퇴사유를 입력해주세요."  required>
+                        </div>
+                        <button type="submit" class="button">탈퇴하기</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        
+    </main> 
+    <footer id="footer">
+        <div class="container">
+            <div class="footlogo">
+                <img src="../../assets/img/footlogo.svg" alt="로고이미지">
+            </div>
+            <div class="footcont">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                </ul>
+                <ul>
+                    <li>ONLYFORYOU</li>
+                    <li>BRN : 00 - 00 - 0000</li>
+                    <li>Representative : people</li>
+                </ul>
+                <ul>
+                    <li>call : 1588-0000</li>
+                    <li>email : only@for.you</li>
+                    <li>Address : ansan </li>
+                </ul>
+                <strong>copyright &copy; 2023 onlyforyou Inc All right reserved</strong>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

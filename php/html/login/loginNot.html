@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=r, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        @import url('https://webfontworld.github.io/sandbox/SBAggro.css');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0 auto;
+            font-family: 'SBAggro';
+        }
+        img {
+            vertical-align: top;
+            width: 100%;
+        }
+        #wrap {
+            width: 100%;
+            padding-top: 10%;
+        }
+        .container {
+            width: 800px;;
+            margin: 0 auto;
+        }
+        #main {
+            padding: 10vh;
+            /* background-color: #dff5bb3e; */
+            text-align: center;
+            border-radius: 10px;
+        }
+        .logo {
+            text-align: center;
+            padding: 0 0 50px 0;
+        }
+        .logo img {
+            width: 220px;
+        }
+        #main {
+            width: 500px;
+            height: 300px;
+            
+        }
+        #main .h1 {
+            font-size:40px;
+            margin-bottom: 50px;
+            font-weight:100;
+            color: #227e16;
+        }
+        #main .p{
+            font-size: 25px;
+            margin-bottom: 60px;
+            line-height: 1.5;
+            font-weight: 300;
+            color: #227e16;
+        }
+        #main a {
+            font-size: 26px;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #FFAD7F;
+            background-color: #FFAD7F;
+            padding: 20px 62px;
+            border-radius: 10px;
+            font-weight: lighter;
+        }
+
+        /* 미디어 쿼리 */
+        @media (max-width : 1200px) {
+            #main {
+                width: 96%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <main id="main">
+                <div class="logo"><img src="../../assets/img/logo.png" alt=""></div>
+                <div class="h1">로그인 실패</div>
+                <div class="p">아이디나 비밀번호가 일치하지 않습니다.<br>
+                    다시 확인해 주시기 바랍니다.
+                </div>
+                <a href="../login/login.html">로그인 화면으로</a>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

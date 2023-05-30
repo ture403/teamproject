@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글씨 움직이기</title>
+
+    <style>
+    @import url('https://webfontworld.github.io/recia/ReciaSerifDisplay.css');
+    :root {
+        --size: clamp(10rem, 1rem + 40vmin, 30rem);
+        --gap: calc(var(--size) / 14);
+        --duration: 200s;
+        --scroll-start: 0;
+        --scroll-end: calc(-100% - var(--gap));
+    }
+    * {
+        box-sizing: border-box;
+    }
+        #typo {
+        display: grid;
+        align-content: center;
+        overflow: hidden;
+        gap: var(--gap);
+        width: 100%;
+        font-family: 'ReciaSerifDisplay', sans-serif;
+        font-size: 3rem;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 1.2;
+        color: #000000;
+    }
+    .marquee {
+        width: 100vw;
+        display: flex;
+        overflow: hidden;
+    }
+    .marquee__group {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: var(--gap);
+        min-width: 100%;
+        -webkit-animation: scroll-x var(--duration) linear infinite;
+        animation: scroll-x var(--duration) linear infinite;
+    }
+    @keyframes scroll-x {
+    from {
+        transform: translateX(var(--scroll-start));
+    }
+    to {
+        transform: translateX(var(--scroll-end));
+    }
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+        margin: auto;
+    } 
+    </style>
+</head>
+<body>
+    <article id="typo">
+            <div class="wrapper">
+                <div class="marquee">
+                    <div class="marquee__group">
+                        What you need now is ONLY FOR YOU /
+                        What you need now is ONLY FOR YOU /
+                        What you need now is ONLY FOR YOU /
+                        What you need now is ONLY FOR YOU /
+                        What you need now is ONLY FOR YOU /
+                        What you need now is ONLY FOR YOU /
+                        What you need now is ONLY FOR YOU /
+                        What you need now is ONLY FOR YOU /
+                        What you need now is ONLY FOR YOU /
+                        What you need now is ONLY FOR YOU /
+                        What you need now is ONLY FOR YOU /
+                        What you need now is ONLY FOR YOU /
+                        What you need now is ONLY FOR YOU /
+
+                    </div>
+                </div>
+            </div>
+        </article>
+</body>
+</html>
