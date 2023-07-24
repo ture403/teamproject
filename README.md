@@ -1,6 +1,6 @@
 # TEAMPROJECT-PHP
 
-<img src="/html/assets/img/Frame 4.png"  width="700" height="370">
+<img src="php/assets/img/3.png"  width="700" height="370">
 VIEW SITE : http://plove13.dothome.co.kr/php/php/main/main.php)
 PHP,MYSQL 를 사용해서 블로그 싸이트를 만들었습니다.
 
